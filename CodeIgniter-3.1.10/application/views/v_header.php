@@ -4,9 +4,6 @@
 	<!-- start: Meta -->
 	<meta charset="utf-8">
 	<title>E-GOLD</title>
-	<meta name="description" content="Distro, cikarang, terlengkap, information, technology, jababeka, baru, murah"/>
-	<meta name="keywords" content="Kaos, Murah, Cikarang, Baru, terlengkap, harga, terjangkau" />
-	<meta name="author" content="Hakko Bio Richard"/>
 	<!-- end: Meta -->
 	
 	<!-- start: Mobile Specific -->
