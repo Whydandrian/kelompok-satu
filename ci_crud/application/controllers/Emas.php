@@ -21,32 +21,38 @@ class Emas extends CI_Controller {
 	public function book_add()
 		{
 			$data = array(
-					'book_isbn' => $this->input->post('book_isbn'),
-					'book_title' => $this->input->post('book_title'),
-					'book_author' => $this->input->post('book_author'),
-					'book_category' => $this->input->post('book_category'),
+					'id_Barang' => $this->input->post('id_Barang'),
+					'nama' => $this->input->post('nama'),
+					'berat' => $this->input->post('berat'),
+					'harga' => $this->input->post('harga'),
+					'stok' => $this->input->post('stok'),
+					'keterangan' => $this->input->post('keterangan'),
+					'id_Kategori' => $this->input->post('id_Kategori'),
+					'gambar' => $this->input->post('gambar'),
 				);
-			$insert = $this->book_model->book_add($data);
+			$insert = $this->emas_model->emas_add($data);
 			echo json_encode(array("status" => TRUE));
 		}
+
 		public function ajax_edit($id)
 		{
-			$data = $this->book_model->get_by_id($id);
-
-
-
+			$data = $this->emas_model->get_by_id($id);
 			echo json_encode($data);
 		}
 
 		public function book_update()
 	{
 		$data = array(
-				'book_isbn' => $this->input->post('book_isbn'),
-				'book_title' => $this->input->post('book_title'),
-				'book_author' => $this->input->post('book_author'),
-				'book_category' => $this->input->post('book_category'),
+				'id_Barang' => $this->input->post('id_Barang'),
+				'nama' => $this->input->post('nama'),
+				'berat' => $this->input->post('berat'),
+				'harga' => $this->input->post('harga'),
+				'stok' => $this->input->post('stok'),
+				'keterangan' => $this->input->post('keterangan'),
+				'id_Kategori' => $this->input->post('id_Kategori'),
+				'gambar' => $this->input->post('gambar'),
 			);
-		$this->book_model->book_update(array('book_id' => $this->input->post('book_id')), $data);
+		$this->emas_model->emas_update(array('id_Barang' => $this->input->post('id_Barang')), $data);
 		echo json_encode(array("status" => TRUE));
 	}
 
