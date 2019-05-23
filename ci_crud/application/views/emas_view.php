@@ -113,7 +113,8 @@
         {
 
             $('[name="id_Barang"]').val(data.id_Barang);
-            $('[name="berat"]').val(data.nama);
+            $('[name="nama"]').val(data.nama);
+            $('[name="berat"]').val(data.berat);
             $('[name="harga"]').val(data.harga);
             $('[name="stok"]').val(data.stok);
             $('[name="keterangan"]').val(data.keterangan);
@@ -211,7 +212,7 @@
             <div class="form-group">
               <label class="control-label col-md-3">Berat</label>
               <div class="col-md-9">
-                <input name="berat" placeholder="Book_title" class="form-control" type="text">
+                <input name="berat" placeholder="Berat" class="form-control" type="text">
               </div>
             </div>
             <div class="form-group">
