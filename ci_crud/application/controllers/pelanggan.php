@@ -37,7 +37,7 @@ class pelanggan extends CI_Controller {
 		}
 		public function ajax_edit($id)
 		{
-			$data = $this->book_model->get_by_id($id);
+			$data = $this->pelanggan_model->get_by_id($id);
 
 
 
@@ -66,7 +66,7 @@ class pelanggan extends CI_Controller {
 
 	public function pelanggan_delete($id)
 	{
-		$this->book_model->delete_by_id($id);
+		$this->pelanggan_model->delete_by_id($id);
 		echo json_encode(array("status" => TRUE));
 	}
 

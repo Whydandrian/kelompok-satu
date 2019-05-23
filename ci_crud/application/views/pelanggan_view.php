@@ -127,12 +127,13 @@
         success: function(data)
         {
 
+            $('[name="nama"]').val(data.nama);
             $('[name="id_pelanggan"]').val(data.id_pelanggan);
             $('[name="Email"]').val(data.Email);
             $('[name="Username"]').val(data.Username);
             $('[name="Password"]').val(data.Password); 
             $('[name="Alamat"]').val(data.Alamat);
-            $('[name="kode_pos"]').val(data.id_kode_pos);
+            $('[name="kode_pos"]').val(data.kode_pos);
             $('[name="Jenis_Kelamin"]').val(data.Jenis_Kelamin);
             $('[name="Umur"]').val(data.Umur);
             $('[name="No_Rekening"]').val(data.No_Rekening);
@@ -228,9 +229,9 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-md-3">ID PELANGGAN</label>
+              <label class="control-label col-md-3">USERNAME</label>
               <div class="col-md-9">
-                <input name="id_pelanggan" placeholder="ID_PELANGGAN" class="form-control" type="text">
+                <input name="Username" placeholder="Username" class="form-control" type="text">
               </div>
             </div>
             <div class="form-group">
