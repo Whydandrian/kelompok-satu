@@ -22,7 +22,7 @@
 </center>
     <h3>Data Emas</h3>
     <br />
-    <button class="btn btn-success" onclick="add_emas()"><i class="glyphicon glyphicon-plus"></i> Add Emas</button>
+    <button class="btn btn-success" onclick="add_emas()"><i class="glyphicon glyphicon-plus"></i> Tambah Emas</button>
     <br />
     <br />
     <table id="table_id" class="table table-striped table-bordered" cellspacing="0" width="100%">
@@ -106,21 +106,23 @@
 
       //Ajax Load data from ajax
       $.ajax({
-        url : "<?php echo site_url('index.php/book/ajax_edit/')?>/" + id,
+        url : "<?php echo site_url('index.php/emas/ajax_edit/')?>/" + id,
         type: "GET",
         dataType: "JSON",
         success: function(data)
         {
 
-            $('[name="book_id"]').val(data.book_id);
-            $('[name="book_isbn"]').val(data.book_isbn);
-            $('[name="book_title"]').val(data.book_title);
-            $('[name="book_author"]').val(data.book_author);
-            $('[name="book_category"]').val(data.book_category);
+            $('[name="id_Barang"]').val(data.id_Barang);
+            $('[name="berat"]').val(data.nama);
+            $('[name="harga"]').val(data.harga);
+            $('[name="stok"]').val(data.stok);
+            $('[name="keterangan"]').val(data.keterangan);
+            $('[name="id_Kategori"]').val(data.id_Kategori);
+            $('[name="gambar"]').val(data.gambar);
 
 
             $('#modal_form').modal('show'); // show bootstrap modal when complete loaded
-            $('.modal-title').text('Edit Book'); // Set title to Bootstrap modal title
+            $('.modal-title').text('Edit Data Emas'); // Set title to Bootstrap modal title
 
         },
         error: function (jqXHR, textStatus, errorThrown)
@@ -194,39 +196,59 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h3 class="modal-title">Book Form</h3>
+        <h3 class="modal-title">Tambah Data Emas</h3>
       </div>
       <div class="modal-body form">
         <form action="#" id="form" class="form-horizontal">
-          <input type="hidden" value="" name="book_id"/>
+          <input type="hidden" value="" name="id_Barang"/>
           <div class="form-body">
             <div class="form-group">
-              <label class="control-label col-md-3">Book ISBN</label>
+              <label class="control-label col-md-3">Nama Barang</label>
               <div class="col-md-9">
-                <input name="book_isbn" placeholder="Book ISBN" class="form-control" type="text">
+                <input name="nama" placeholder="Nama Barang" class="form-control" type="text">
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-md-3">Book Title</label>
+              <label class="control-label col-md-3">Berat</label>
               <div class="col-md-9">
-                <input name="book_title" placeholder="Book_title" class="form-control" type="text">
+                <input name="berat" placeholder="Book_title" class="form-control" type="text">
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-md-3">Book Author</label>
+              <label class="control-label col-md-3">Harga</label>
               <div class="col-md-9">
-								<input name="book_author" placeholder="Book Author" class="form-control" type="text">
+								<input name="harga" placeholder="Harga" class="form-control" type="text">
 
               </div>
             </div>
-						<div class="form-group">
-							<label class="control-label col-md-3">Book Category</label>
-							<div class="col-md-9">
-								<input name="book_category" placeholder="Book Category" class="form-control" type="text">
+            <div class="form-group">
+              <label class="control-label col-md-3">Stok</label>
+              <div class="col-md-9">
+                <input name="stok" placeholder="Book Author" class="form-control" type="text">
 
-							</div>
-						</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-3">Keterangan</label>
+              <div class="col-md-9">
+                <input name="keterangan" placeholder="Keterangan" class="form-control" type="text">
 
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-3">Kategori</label>
+              <div class="col-md-9">
+                <input name="id_Kategori" placeholder="Kategori" class="form-control" type="text">
+
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-md-3">Gambar</label>
+              <div class="col-md-9">
+                <input name="gambar" placeholder="Gambar" class="form-control" type="text">
+
+              </div>
+            </div>
           </div>
         </form>
           </div>
