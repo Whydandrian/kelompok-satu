@@ -1,10 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Book_model extends CI_Model
+class pelanggan_model extends CI_Model
 {
 
-	var $table = 'books';
+	var $table = 'pelanggan';
 
 
 	public function __construct()
@@ -14,9 +14,9 @@ class Book_model extends CI_Model
 	}
 
 
-public function get_all_books()
+public function get_all_pelanggan()
 {
-$this->db->from('books');
+$this->db->from('pelanggan');
 $query=$this->db->get();
 return $query->result();
 }
@@ -25,19 +25,19 @@ return $query->result();
 	public function get_by_id($id)
 	{
 		$this->db->from($this->table);
-		$this->db->where('book_id',$id);
+		$this->db->where('id_pelanggan',$id);
 		$query = $this->db->get();
 
 		return $query->row();
 	}
 
-	public function book_add($data)
+	public function pelanggan_add($data)
 	{
 		$this->db->insert($this->table, $data);
 		return $this->db->insert_id();
 	}
 
-	public function book_update($where, $data)
+	public function pelanggan_update($where, $data)
 	{
 		$this->db->update($this->table, $data, $where);
 		return $this->db->affected_rows();
@@ -45,7 +45,7 @@ return $query->result();
 
 	public function delete_by_id($id)
 	{
-		$this->db->where('book_id', $id);
+		$this->db->where('id_pelanggan', $id);
 		$this->db->delete($this->table);
 	}
 
