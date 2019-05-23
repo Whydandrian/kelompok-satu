@@ -30,11 +30,11 @@
         <tr>
 					<th>ID Barang</th>
 					<th>Nama Barang</th>
+					<th>Kategori</th>
 					<th>Berat</th>
 					<th>Harga</th>
-					<th>Stok</th>
+          <th>Stok</th>
           <th>Gambar</th>
-          <th>Kategori</th>
           <th>Keterangan</th>
           <th style="width:125px;">Aksi
           </p></th>
