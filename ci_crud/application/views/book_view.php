@@ -20,7 +20,7 @@
   <div class="container">
     <h1>E GOLD</h1>
 </center>
-    <h3>Book Store</h3>
+    <h3>Data ....</h3>
     <br />
     <button class="btn btn-success" onclick="add_book()"><i class="glyphicon glyphicon-plus"></i> Add Book</button>
     <br />
