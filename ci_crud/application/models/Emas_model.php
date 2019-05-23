@@ -45,7 +45,7 @@ class Emas_model extends CI_Model
 
 	public function delete_by_id($id)
 	{
-		$this->db->where('book_id', $id);
+		$this->db->where('id_Barang', $id);
 		$this->db->delete($this->table);
 	}
 

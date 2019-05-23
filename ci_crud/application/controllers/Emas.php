@@ -17,7 +17,7 @@ class Emas extends CI_Controller {
 		$this->load->view('emas_view',$data);
 	}
 
-	
+
 	public function book_add()
 		{
 			$data = array(
@@ -50,9 +50,9 @@ class Emas extends CI_Controller {
 		echo json_encode(array("status" => TRUE));
 	}
 
-	public function book_delete($id)
+	public function barang_delete($id)
 	{
-		$this->book_model->delete_by_id($id);
+		$this->emas_model->delete_by_id($id);
 		echo json_encode(array("status" => TRUE));
 	}
 

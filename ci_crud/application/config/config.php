@@ -23,9 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/ci_crud/';
+$config['base_url'] = 'http://localhost/kelompok-satu/ci_crud/';
 
-$config['site_url'] = 'http://localhost/ci_crud/';
+$config['site_url'] = 'http://localhost/kelompok-satu/ci_crud/';
 
 /*
 |--------------------------------------------------------------------------

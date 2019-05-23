@@ -165,11 +165,11 @@
 
     function delete_barang(id)
     {
-      if(confirm('Are you sure delete this data?'))
+      if(confirm('Data yang akan dihapus tidak dapat kembali, apakah anda yakin?'))
       {
         // ajax delete data from database
           $.ajax({
-            url : "<?php echo site_url('index.php/book/book_delete')?>/"+id,
+            url : "<?php echo site_url('index.php/emas/barang_delete')?>/"+id,
             type: "POST",
             dataType: "JSON",
             success: function(data)
@@ -179,7 +179,7 @@
             },
             error: function (jqXHR, textStatus, errorThrown)
             {
-                alert('Error deleting data');
+                alert('Error saat menghapus data');
             }
         });
 
