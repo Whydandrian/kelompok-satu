@@ -21,17 +21,17 @@ class Kategori extends CI_Controller {
 	public function kategori_add()
 		{
 			$data = array(
-					'id_Kategori' => $this->input->post('id_Kategori'),
+					
 					'nama_kategori' => $this->input->post('nama_kategori'),
 					
 				);
-			$insert = $this->kategori_model->kategori_add($data);
+			$insert = $this->Kategori_model->kategori_add($data);
 			echo json_encode(array("status" => TRUE));
 		}
 
 		public function ajax_edit($id)
 		{
-			$data = $this->kategori_model->get_by_id($id);
+			$data = $this->Kategori_model->get_by_id($id);
 			echo json_encode($data);
 		}
 

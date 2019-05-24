@@ -90,7 +90,7 @@
 
       //Ajax Load data from ajax
       $.ajax({
-        url : "<?php echo site_url('index.php/Kategori/ajax_edit/')?>/" + id,
+        url : "<?php echo site_url('index.php/kategori/ajax_edit/')?>/" + id,
         type: "GET",
         dataType: "JSON",
         success: function(data)
@@ -184,7 +184,7 @@
             <div class="form-group">
               <label class="control-label col-md-3">Nama Kategori</label>
               <div class="col-md-9">
-                <input name="nama" placeholder="Nama Barang" class="form-control" type="text">
+                <input name="nama_kategori" placeholder="Nama Barang" class="form-control" type="text">
               </div>
             </div>
             
