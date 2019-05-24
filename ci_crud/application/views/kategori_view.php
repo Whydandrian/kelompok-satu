@@ -21,6 +21,7 @@
     <h1>E GOLD</h1>
 </center>
     <h3>Data Kategori</h3>
+    <br><a href="<?php echo base_url('Home')?>">Kembali</a>
     <br />
     <button class="btn btn-success" onclick="add_kategori()"><i class="glyphicon glyphicon-plus"></i> Tambah Kategori</button>
     <br />

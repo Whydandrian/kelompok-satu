@@ -21,6 +21,7 @@
     <h1>E GOLD</h1>
 </center>
     <h3>Tabel Pelanggan</h3>
+    <br><a href="<?php echo base_url('Home')?>">Kembali</a>
     <br />
     <button class="btn btn-success" onclick="add_pelanggan()"><i class="glyphicon glyphicon-plus"></i> Add Pelanggan</button>
     <br />

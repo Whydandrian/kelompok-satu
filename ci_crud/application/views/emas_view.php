@@ -21,6 +21,7 @@
     <h1>E GOLD</h1>
 </center>
     <h3>Data Emas</h3>
+    <br><a href="<?php echo base_url('Home')?>">Kembali</a>
     <br />
     <button class="btn btn-success" onclick="add_emas()"><i class="glyphicon glyphicon-plus"></i> Tambah Emas</button>
     <br />
