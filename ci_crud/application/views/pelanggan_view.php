@@ -71,22 +71,6 @@
 
 
       </tbody>
-
-      <tfoot>
-        <tr>
-        
-					<th>ID Pelanggan</th>
-					<th>Email</th>
-					<th>Username</th>
-					<th>Password</th>
-          <th>Alamat</th>
-          <th>Jenis Kelamin</th>
-          <th>Umur</th>
-          <th>No Rekening</th>
-          <th>TTL</th>
-          <th>No Telp</th>
-        </tr>
-      </tfoot>
     </table>
 
   </div>
