@@ -218,12 +218,6 @@
         <form action="#" id="form" class="form-horizontal">
           <input type="hidden" value="" name="Id_Pelanggan"/>
           <div class="form-body">
-          <div class="form-group">
-              <label class="control-label col-md-3">ID Pelanggan</label>
-              <div class="col-md-9">
-                <input name="Id_Pelanggan" placeholder="Id Pelanggann" class="form-control" type="text">
-              </div>
-            </div>
             <div class="form-group">
               <label class="control-label col-md-3">USERNAME</label>
               <div class="col-md-9">
