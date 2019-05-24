@@ -97,9 +97,10 @@
   <div id="container">
     <h1>E GOLD</h1>
     <div id="body">
-      <a href="http://localhost/ci/home/home_page">Data Kategori Emas</a>
-      <a href="http://localhost/ci/biodata/biodata_page">Data Emas</a>
-      <a href="http://localhost/ci/galeri/galeri_page">Data Pelanggan</a>
+      <a href="<?php echo base_url('Kategori')?>">Data Kategori Emas</a>
+      <a href="<?php echo base_url('Emas')?>">Data Emas</a>
+      <a href="<?php echo base_url('Pelanggan')?>">Data Pelanggan</a>
+      <a href="<?php echo base_url('Penjualan')?>">Transaksi Penjualan</a>
       <div style="text-align: center;">
         <h1 class="home">Home</h1>
         <img src="<?php echo base_url('assets/images/boku1.jpg'); ?>" width="100" height="100">
