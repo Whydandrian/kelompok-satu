@@ -216,7 +216,7 @@
       </div>
       <div class="modal-body form">
         <form action="#" id="form" class="form-horizontal">
-          <input type="hidden" value="" name="Id_Pelanggann"/>
+          <input type="hidden" value="" name="Id_Pelanggan"/>
           <div class="form-body">
           <div class="form-group">
               <label class="control-label col-md-3">ID Pelanggan</label>
