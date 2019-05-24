@@ -64,7 +64,7 @@
         		<div class="span4">
           			<div class="icons-box">
                         <div class="title"><h3><?php echo $data['nama']; ?></h3></div>
-                        <img src="admin/foto/liontin.jpg<?php echo $data['gambar']; ?>" width="100" height="100">
+                        <img src="<?php echo base_url(); ?>/assets/admin/foto/02012019173231liontin.jpg"
 						<div><h3>Rp.<?php echo number_format($data['harga'],2,",",".");?></h3></div>
 					<!--	<p>
 						

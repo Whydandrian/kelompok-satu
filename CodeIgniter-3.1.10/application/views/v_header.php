@@ -68,7 +68,7 @@
 			              			<li class="dropdown">
 			                			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Kategori <b class="caret"></b></a>
 			                			<ul class="dropdown-menu">
-			                  				<li><a href="anting.php">Anting</a></li>
+			                  				<li><a href="<?php echo base_url(); ?>/anting.php">Anting</a></li>
 			                  				<li><a href="cincin.php">Cincin</a></li>
 			                  				<li><a href="gelang.php">Gelang </a></li>
 			                  				<li><a href="kalung.php">Kalung</a></li>
