@@ -103,7 +103,7 @@
       <div style="text-align: center;">
         <h1 class="home">Home</h1>
         <img src="<?php echo base_url('assets/images/boku1.jpg'); ?>" width="100" height="100">
-        <h2>Halo.. Selamat Datang. Perkenalkan nama saya Wahyudi Andrian.</h2>
+        
       </div>
     </div>
     <p class="footer">All Right Reserved. &copy Kelompok Satu</p>
