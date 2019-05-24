@@ -19,13 +19,11 @@ class pelanggan extends CI_Controller {
 	public function pelanggan_add()
 		{
 			$data = array(
-					'nama' => $this->input->post('nama'),
-					'id_pelanggan' => $this->input->post('id_pelanggan'),
+					'Id_Pelanggan' => $this->input->post('Id_Pelanggan'),
 					'Email' => $this->input->post('Email'),
 					'Username' => $this->input->post('Username'),
 					'Password' => $this->input->post('Password'),
 					'Alamat' => $this->input->post('Alamat'),
-					'kode_pos' => $this->input->post('kode_pos'),
 					'Jenis_Kelamin' => $this->input->post('Jenis_Kelamin'),
 					'Umur' => $this->input->post('Umur'),
 					'No_Rekening' => $this->input->post('No_Rekening'),
@@ -47,20 +45,18 @@ class pelanggan extends CI_Controller {
 		public function pelanggan_update()
 	{
 		$data = array(
-			'nama' => $this->input->post('nama'),
-			'id_pelanggan' => $this->input->post('id_pelanggan'),
+			'Id_Pelanggan' => $this->input->post('Id_Pelanggan'),
 			'Email' => $this->input->post('Email'),
 			'Username' => $this->input->post('Username'),
 			'Password' => $this->input->post('Password'),
 			'Alamat' => $this->input->post('Alamat'),
-			'kode_pos' => $this->input->post('kode_pos'),
 			'Jenis_Kelamin' => $this->input->post('Jenis_Kelamin'),
 			'Umur' => $this->input->post('Umur'),
 			'No_Rekening' => $this->input->post('No_Rekening'),
 			'TTL' => $this->input->post('TTL'),
 			'No_Telp' => $this->input->post('No_Telp'),
 			);
-		$this->pelanggan_model->pelanggan_update(array('id_pelanggan' => $this->input->post('id_pelanggan')), $data);
+		$this->pelanggan_model->pelanggan_update(array('Id_Pelanggan' => $this->input->post('Id_Pelanggan')), $data);
 		echo json_encode(array("status" => TRUE));
 	}
 

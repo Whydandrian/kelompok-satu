@@ -28,13 +28,12 @@
     <table id="table_id" class="table table-striped table-bordered" cellspacing="0" width="100%">
       <thead>
         <tr>
-					<th>Nama</th>
+					
 					<th>ID Pelanggan</th>
 					<th>Email</th>
 					<th>Username</th>
 					<th>Password</th>
           <th>Alamat</th>
-          <th>Kode Pos</th>
           <th>Jenis Kelamin</th>
           <th>Umur</th>
           <th>No Rekening</th>
@@ -48,21 +47,20 @@
       <tbody>
 				<?php foreach($pelanggan as $pelanggan){?>
 				     <tr>
-				         <td><?php echo $pelanggan->nama;?></td>
-				         <td><?php echo $pelanggan->id_pelanggan;?></td>
+				         
+				         <td><?php echo $pelanggan->Id_Pelanggan;?></td>
 								 <td><?php echo $pelanggan->Email;?></td>
 								<td><?php echo $pelanggan->Username;?></td>
 								<td><?php echo $pelanggan->Password;?></td>
                 <td><?php echo $pelanggan->Alamat;?></td>
-				         <td><?php echo $pelanggan->kode_pos;?></td>
 								 <td><?php echo $pelanggan->Jenis_Kelamin;?></td>
 								<td><?php echo $pelanggan->Umur;?></td>
 								<td><?php echo $pelanggan->No_Rekening;?></td>
                 <td><?php echo $pelanggan->TTL;?></td>
 								<td><?php echo $pelanggan->No_Telp;?></td>
 								<td>
-									<button class="btn btn-warning" onclick="edit_pelanggan(<?php echo $pelanggan->id_pelanggan;?>)"><i class="glyphicon glyphicon-pencil"></i></button>
-									<button class="btn btn-danger" onclick="delete_pelanggan(<?php echo $pelanggan->id_pelanggan;?>)"><i class="glyphicon glyphicon-remove"></i></button>
+									<button class="btn btn-warning" onclick="edit_pelanggan(<?php echo $pelanggan->Id_Pelanggan;?>)"><i class="glyphicon glyphicon-pencil"></i></button>
+									<button class="btn btn-danger" onclick="delete_pelanggan(<?php echo $pelanggan->Id_Pelanggan;?>)"><i class="glyphicon glyphicon-remove"></i></button>
 
 
 								</td>
@@ -75,13 +73,12 @@
 
       <tfoot>
         <tr>
-        <th>Nama</th>
+        
 					<th>ID Pelanggan</th>
 					<th>Email</th>
 					<th>Username</th>
 					<th>Password</th>
           <th>Alamat</th>
-          <th>Kode Pos</th>
           <th>Jenis Kelamin</th>
           <th>Umur</th>
           <th>No Rekening</th>
@@ -127,13 +124,12 @@
         success: function(data)
         {
 
-            $('[name="nama"]').val(data.nama);
-            $('[name="id_pelanggan"]').val(data.id_pelanggan);
+            
+            $('[name="Id_Pelanggan"]').val(data.Id_Pelanggan);
             $('[name="Email"]').val(data.Email);
             $('[name="Username"]').val(data.Username);
             $('[name="Password"]').val(data.Password); 
             $('[name="Alamat"]').val(data.Alamat);
-            $('[name="kode_pos"]').val(data.kode_pos);
             $('[name="Jenis_Kelamin"]').val(data.Jenis_Kelamin);
             $('[name="Umur"]').val(data.Umur);
             $('[name="No_Rekening"]').val(data.No_Rekening);
@@ -220,12 +216,12 @@
       </div>
       <div class="modal-body form">
         <form action="#" id="form" class="form-horizontal">
-          <input type="hidden" value="" name="id_pelanggan"/>
+          <input type="hidden" value="" name="Id_Pelanggann"/>
           <div class="form-body">
-            <div class="form-group">
-              <label class="control-label col-md-3">NAMA</label>
+          <div class="form-group">
+              <label class="control-label col-md-3">ID Pelanggan</label>
               <div class="col-md-9">
-                <input name="nama" placeholder="NAMA" class="form-control" type="text">
+                <input name="Id_Pelanggan" placeholder="Id Pelanggann" class="form-control" type="text">
               </div>
             </div>
             <div class="form-group">
@@ -254,12 +250,7 @@
                 <input name="Alamat" placeholder="ALAMAT" class="form-control" type="text">
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-md-3">KODE POS</label>
-              <div class="col-md-9">
-                <input name="kode_pos" placeholder="kode_pos" class="form-control" type="text">
-              </div>
-            </div>
+            
             <div class="form-group">
               <label class="control-label col-md-3">JENIS KELAMIN</label>
               <div class="col-md-9">

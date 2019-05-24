@@ -25,7 +25,7 @@ return $query->result();
 	public function get_by_id($id)
 	{
 		$this->db->from($this->table);
-		$this->db->where('id_pelanggan',$id);
+		$this->db->where('Id_Pelanggan',$id);
 		$query = $this->db->get();
 
 		return $query->row();
@@ -45,7 +45,7 @@ return $query->result();
 
 	public function delete_by_id($id)
 	{
-		$this->db->where('id_pelanggan', $id);
+		$this->db->where('Id_Pelanggan', $id);
 		$this->db->delete($this->table);
 	}
 
