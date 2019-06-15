@@ -17,8 +17,8 @@ class M_barang extends CI_Model
 				IF(c.`merk` IS NULL, '-', c.`merk` ) AS merk 
 			FROM 
 				`pj_barang` AS a 
-				LEFT JOIN `pj_kategori_barang` AS b ON a.`id_kategori_barang` = b.`id_kategori_barang` 
-				LEFT JOIN `pj_merk_barang` AS c ON a.`id_merk_barang` = c.`id_merk_barang` 
+				INNER JOIN `pj_kategori_barang` AS b ON a.`id_kategori_barang` = b.`id_kategori_barang` 
+				INNER JOIN `pj_merk_barang` AS c ON a.`id_merk_barang` = c.`id_merk_barang` 
 				, (SELECT @row := 0) r WHERE 1=1 
 				AND a.`dihapus` = 'tidak' 
 		";
