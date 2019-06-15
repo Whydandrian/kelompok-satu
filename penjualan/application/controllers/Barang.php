@@ -33,7 +33,7 @@ class Barang extends MY_Controller
 
 		$data	= array();
 		foreach($query->result_array() as $row)
-		{ 
+		{
 			$nestedData = array(); 
 
 			$nestedData[]	= $row['nomor'];
@@ -46,7 +46,7 @@ class Barang extends MY_Controller
 			$nestedData[]	= $row['harga'];
 			$nestedData[]	= preg_replace("/\r\n|\r|\n/",'<br />', $row['keterangan']);
 
-			if($level == 'admin' OR $level == 'inventory')
+			if($level == 'admin')
 			{
 				$nestedData[]	= "<a href='".site_url('barang/edit/'.$row['id_barang'])."' id='EditBarang'><i class='fa fa-pencil'></i> Edit</a>";
 				$nestedData[]	= "<a href='".site_url('barang/hapus/'.$row['id_barang'])."' id='HapusBarang'><i class='fa fa-trash-o'></i> Hapus</a>";
