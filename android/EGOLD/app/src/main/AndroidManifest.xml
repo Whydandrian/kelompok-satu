@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".gelang"></activity>
+        <activity android:name=".liontin"></activity>
+        <activity android:name=".anting" />
+        <activity android:name=".gelang" />
         <activity android:name=".kalung" />
         <activity android:name=".cincin" />
         <activity android:name=".konfirmasi" />
