@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgapps"
+    tools:context=".MainActivity">
+
+    <!-- mendefinisikan struktur layout desain menggunakan linear layout-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- digunakan untuk mengatur style profil my dashboard-->
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/person"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/txtDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kategori Cincin"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/txtDashboard"
+                android:textSize="12dp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <!-- layout yang digunakan untuk membuat cardview dan grid layout-->
+        <GridLayout
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:rowCount="3"
+            android:columnCount="2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- row 1 column 1-->
+            <!--membuat cardview-->
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/cincin1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CincinPutih"
+                        android:textColor="#6f6f6f"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- row 1 column 2-->
+            <!--membuat cardview-->
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/cincin2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CincinEmas"
+                        android:textColor="#6f6f6f"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- row 2 column 1-->
+            <!--membuat cardview-->
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/cincin3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CincinKeren"
+                        android:textColor="#6f6f6f"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- row 2 column 2-->
+            <!--membuat cardview-->
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/cincin"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CincinBagus"
+                        android:textColor="#6f6f6f"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- row 3 column 1-->
+            <!--membuat cardview-->
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/cincin4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CincinBekas"
+                        android:textColor="#6f6f6f"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- row 3 column 2-->
+            <!--membuat cardview-->
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/cincin5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CincinKawin"
+                        android:textColor="#6f6f6f"
+                        android:textSize="22sp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".konfirmasi"></activity>
+        <activity android:name=".gelang"></activity>
+        <activity android:name=".kalung" />
+        <activity android:name=".cincin" />
+        <activity android:name=".konfirmasi" />
         <activity android:name=".Register" />
         <activity android:name=".Login" />
         <activity android:name=".MainActivity">
