@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity_halaman_home"></activity>
+        <activity android:name=".fragment_account"></activity>
+        <activity android:name=".activity_halaman_home" />
         <activity android:name=".konfirmasi" />
         <activity android:name=".Register" />
         <activity android:name=".Login" />
