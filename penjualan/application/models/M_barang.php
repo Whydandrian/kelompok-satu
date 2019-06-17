@@ -9,7 +9,6 @@ class M_barang extends CI_Model
 				a.`id_barang`, 
 				a.`kode_barang`, 
 				a.`nama_barang`,
-				a.`size`,
 				IF(a.`total_stok` = 0, 'Kosong', a.`total_stok`) AS total_stok,
 				CONCAT('Rp. ', REPLACE(FORMAT(a.`harga`, 0),',','.') ) AS harga,
 				a.`keterangan`,
