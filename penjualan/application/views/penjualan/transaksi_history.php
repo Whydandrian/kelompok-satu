@@ -8,7 +8,7 @@ $level = $this->session->userdata('ap_level');
 <div class="container">
 	<div class="panel panel-default">
 		<div class="panel-body">
-			<h5><i class='fa fa-shopping-cart fa-fw'></i> Penjualan <i class='fa fa-angle-right fa-fw'></i> History Penjualan</h5>
+			<h5><img src="<?php echo config_item('img'); ?>carts2.png" /> Penjualan <i class='fa fa-angle-right fa-fw'></i> History Penjualan</h5>
 			<hr />
 
 			<div class='table-responsive'>

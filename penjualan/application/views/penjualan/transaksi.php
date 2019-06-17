@@ -33,7 +33,7 @@ if($level !== 'admin')
 			<div class='row'>
 				<div class='col-sm-3'>
 					<div class="panel panel-primary">
-						<div class="panel-heading"><i class='fa fa-file-text-o fa-fw'></i> Informasi Nota</div>
+						<div class="panel-heading"><img src="<?php echo config_item('img'); ?>laporan.png" /> Informasi Nota</div>
 						<div class="panel-body">
 
 							<div class="form-horizontal">
@@ -75,7 +75,7 @@ if($level !== 'admin')
 						</div>
 					</div>
 					<div class="panel panel-primary" id='PelangganArea'>
-						<div class="panel-heading"><i class='fa fa-user'></i> Informasi Pelanggan</div>
+						<div class="panel-heading"><img src="<?php echo config_item('img'); ?>user.png" /> Informasi Pelanggan</div>
 						<div class="panel-body">
 							<div class="form-group">
 								<label>Pelanggan</label>
@@ -120,7 +120,7 @@ if($level !== 'admin')
 				</div>
 				<div class='col-sm-9'>
 					<h5 class='judul-transaksi'>
-						<i class='fa fa-shopping-cart fa-fw'></i> Penjualan <i class='fa fa-angle-right fa-fw'></i> Transaksi
+						<img src="<?php echo config_item('img'); ?>carts2.png" /> Penjualan <i class='fa fa-angle-right fa-fw'></i> Transaksi
 						<a href="<?php echo site_url('penjualan/transaksi'); ?>" class='pull-right'><i class='fa fa-refresh fa-fw'></i> Refresh Halaman</a>
 					</h5>
 					<table class='table table-bordered' id='TabelTransaksi'>
@@ -149,7 +149,7 @@ if($level !== 'admin')
 							<textarea name='catatan' id='catatan' class='form-control' rows='2' placeholder="Catatan Transaksi (Jika Ada)" style='resize: vertical; width:83%;'></textarea>
 							
 							<br />
-							<p><i class='fa fa-keyboard-o fa-fw'></i> <b>Shortcut Keyboard : </b></p>
+							<p><img src="<?php echo config_item('img'); ?>keyboard.png" /> <b>Shortcut Keyboard : </b></p>
 							<div class='row'>
 								<div class='col-sm-6'>F7 = Tambah baris baru</div>
 								<div class='col-sm-6'>F9 = Cetak Struk</div>

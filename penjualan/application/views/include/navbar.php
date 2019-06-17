@@ -61,7 +61,7 @@ $level = $this->session->userdata('ap_level');
 					<ul class="dropdown-menu">
 						<li><a href="<?php echo site_url('user/ubah-password'); ?>" id='GantiPass'>Ubah Password</a></li>
 						<li role="separator" class="divider"></li>
-						<li><a href="<?php echo site_url('secure/logout'); ?>"><i class='fa fa-sign-out fa-fw'></i> Log Out</a></li>
+						<li><a href="<?php echo site_url('secure/logout'); ?>"><img src="<?php echo config_item('img'); ?>signout.png" /> Log Out</a></li>
 					</ul>
 				</li>
 			</ul>
