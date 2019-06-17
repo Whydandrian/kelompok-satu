@@ -18,7 +18,7 @@ $level = $this->session->userdata('ap_level');
 						<tr>
 							<th>#</th>
 							<th>Kategori</th>
-							<?php if($level == 'admin' OR $level == 'inventory') { ?>
+							<?php if($level == 'admin') { ?>
 							<th class='no-sort'>Edit</th>
 							<th class='no-sort'>Hapus</th>
 							<?php } ?>
@@ -33,7 +33,7 @@ $level = $this->session->userdata('ap_level');
 
 <?php
 $tambahan = '';
-if($level == 'admin' OR $level == 'inventory')
+if($level == 'admin')
 {
 	$tambahan .= nbs(2)."<a href='".site_url('barang/tambah-kategori')."' class='btn btn-default' id='TambahKategori'><i class='fa fa-plus fa-fw'></i> Tambah Kategori</a>";
 	$tambahan .= nbs(2)."<span id='Notifikasi' style='display: none;'></span>";
@@ -59,7 +59,7 @@ if($level == 'admin' OR $level == 'inventory')
 					"sNext": "Next"
 				}
 			},
-			"aaSorting": [[ 0, "desc" ]],
+			"aaSorting": [[ 0, "asc" ]],
 			"columnDefs": [ 
 				{
 					"targets": 'no-sort',

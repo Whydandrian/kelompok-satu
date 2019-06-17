@@ -65,7 +65,7 @@ if($level == 'admin')
 					"sNext": "Next"
 				}
 			},
-			"aaSorting": [[ 0, "desc" ]],
+			"aaSorting": [[ 0, "asc" ]],
 			"columnDefs": [ 
 				{
 					"targets": 'no-sort',

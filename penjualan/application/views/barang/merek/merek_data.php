@@ -18,7 +18,7 @@ $level = $this->session->userdata('ap_level');
 						<tr>
 							<th>#</th>
 							<th>Merek</th>
-							<?php if($level == 'admin' OR $level == 'inventory') { ?>
+							<?php if($level == 'admin') { ?>
 							<th class='no-sort'>Edit</th>
 							<th class='no-sort'>Hapus</th>
 							<?php } ?>
@@ -59,7 +59,7 @@ if($level == 'admin' OR $level == 'inventory')
 					"sNext": "Next"
 				}
 			},
-			"aaSorting": [[ 0, "desc" ]],
+			"aaSorting": [[ 0, "asc" ]],
 			"columnDefs": [ 
 				{
 					"targets": 'no-sort',
