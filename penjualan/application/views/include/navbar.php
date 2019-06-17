@@ -22,7 +22,7 @@ $level = $this->session->userdata('ap_level');
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 
-				<?php if($level == 'admin' OR $level == 'keuangan' OR $level == 'kasir') { ?>
+				<?php if($level == 'admin') { ?>
 				<li class="dropdown <?php if($controller == 'penjualan') { echo 'active'; } ?>">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='fa fa-opencart'></i> Penjualan <span class="caret"></span></a>
 					<ul class="dropdown-menu">
