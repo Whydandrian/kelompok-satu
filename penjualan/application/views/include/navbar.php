@@ -24,7 +24,7 @@ $level = $this->session->userdata('ap_level');
 
 				<?php if($level == 'admin') { ?>
 				<li class="dropdown <?php if($controller == 'penjualan') { echo 'active'; } ?>">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='fa fa-opencart'></i> Penjualan <span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='fa fa-opencart'></i><img src="<?php echo config_item('img'); ?>cart.png" />Penjualan <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<?php if($level !== 'keuangan'){ ?>
 						<li><a href="<?php echo site_url('penjualan/transaksi'); ?>">Transaksi</a></li>
@@ -37,7 +37,7 @@ $level = $this->session->userdata('ap_level');
 				<?php } ?>
 
 				<li class="dropdown <?php if($controller == 'barang') { echo 'active'; } ?>">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='fa fa-cube fa-fw'></i> Barang <span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='fa fa-cube fa-fw'></i> <img src="<?php echo config_item('img'); ?>box.png" />Barang <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="<?php echo site_url('barang'); ?>">Semua Barang</a></li>
 						<li role="separator" class="divider"></li>
@@ -47,11 +47,11 @@ $level = $this->session->userdata('ap_level');
 				</li>
 
 				<?php if($level == 'admin' OR $level == 'keuangan') { ?>
-				<li <?php if($controller == 'laporan') { echo "class='active'"; } ?>><a href="<?php echo site_url('laporan'); ?>"><i class='fa fa-file-text fa-fw'></i> Laporan</a></li>
+				<li <?php if($controller == 'laporan') { echo "class='active'"; } ?>><a href="<?php echo site_url('laporan'); ?>"><i class='fa fa-file-text fa-fw'></i> <img src="<?php echo config_item('img'); ?>laporan.png" />Laporan</a></li>
 				<?php } ?>
 
 				<?php if($level == 'admin') { ?>
-				<li <?php if($controller == 'user') { echo "class='active'"; } ?>><a href="<?php echo site_url('user'); ?>"><i class='fa fa-users fa-fw'></i> List User</a></li>
+				<li <?php if($controller == 'user') { echo "class='active'"; } ?>><a href="<?php echo site_url('user'); ?>"><i class='fa fa-users fa-fw'></i> <img src="<?php echo config_item('img'); ?>users.png" />List User</a></li>
 				<?php } ?>
 			</ul>
 
