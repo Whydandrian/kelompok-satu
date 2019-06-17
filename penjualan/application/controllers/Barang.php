@@ -40,7 +40,6 @@ class Barang extends MY_Controller
 			$nestedData[]	= $row['kode_barang'];
 			$nestedData[]	= $row['nama_barang'];
 			$nestedData[]	= $row['kategori'];
-			$nestedData[]	= $row['size'];
 			$nestedData[]	= $row['merk'];
 			$nestedData[]	= ($row['total_stok'] == 'Kosong') ? "<font color='red'><b>".$row['total_stok']."</b></font>" : $row['total_stok'];
 			$nestedData[]	= $row['harga'];
