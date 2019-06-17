@@ -57,7 +57,7 @@ $level = $this->session->userdata('ap_level');
 
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class='fa fa-user fa-fw'></i> <?php echo $this->session->userdata('ap_nama'); ?> <span class="caret"></span></a>
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!-- <i class='fa fa-user fa-fw'></i> --><img src="<?php echo config_item('img'); ?>user.png" /> <?php echo $this->session->userdata('ap_nama'); ?> <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="<?php echo site_url('user/ubah-password'); ?>" id='GantiPass'>Ubah Password</a></li>
 						<li role="separator" class="divider"></li>
