@@ -25,7 +25,7 @@ $level = $this->session->userdata('ap_level');
 							<th>Stok</th>
 							<th>Harga</th>
 							<th>Keterangan</th>
-							<?php if($level == 'admin' OR $level == 'inventory') { ?>
+							<?php if($level == 'admin') { ?>
 							<th class='no-sort'>Edit</th>
 							<th class='no-sort'>Hapus</th>
 							<?php } ?>
@@ -40,7 +40,7 @@ $level = $this->session->userdata('ap_level');
 
 <?php
 $tambahan = '';
-if($level == 'admin' OR $level == 'inventory')
+if($level == 'admin')
 {
 	$tambahan .= nbs(2)."<a href='".site_url('barang/tambah')."' class='btn btn-default' id='TambahBarang'><i class='fa fa-plus fa-fw'></i> Tambah Barang</a>";
 	$tambahan .= nbs(2)."<span id='Notifikasi' style='display: none;'></span>";
