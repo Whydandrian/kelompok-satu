@@ -11,8 +11,10 @@
 			));
 			echo form_hidden('kode_barang_old', $barang->kode_barang);
 			?>
+			
 		</div>
 	</div>
+	
 	<div class="form-group">
 		<label class="col-sm-3 control-label">Nama Barang</label>
 		<div class="col-sm-8">

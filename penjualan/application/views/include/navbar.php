@@ -13,7 +13,7 @@ $level = $this->session->userdata('ap_level');
 				<span class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" href="<?php echo site_url(); ?>">
-				<img alt="<?php echo config_item('web_title'); ?>" src="<?php echo config_item('img'); ?>logo_small2.png">
+				<img src="<?php echo config_item('img'); ?>logo_small2.png">
 			</a>
 		</div>
 
