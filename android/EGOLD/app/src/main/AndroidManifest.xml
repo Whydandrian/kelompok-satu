@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".menukategori"></activity>
+        <activity android:name=".home"></activity>
+        <activity android:name=".menukategori" />
         <activity android:name=".liontin" />
         <activity android:name=".anting" />
         <activity android:name=".gelang" />

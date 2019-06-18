@@ -1,5 +1,4 @@
 <?php echo form_open('barang/edit-kategori/'.$kategori->id_kategori_barang, array('id' => 'FormEditkategori')); ?>
-<img src="<?php echo config_item('img'); ?>edit.png">
 <div class='form-group'>
 	<?php
 	echo form_input(array(

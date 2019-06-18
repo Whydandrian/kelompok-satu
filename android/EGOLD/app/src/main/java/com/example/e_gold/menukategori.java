@@ -8,7 +8,7 @@ import android.widget.ImageView;
 
 public class menukategori extends AppCompatActivity {
 
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
