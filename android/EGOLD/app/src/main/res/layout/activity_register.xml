@@ -89,12 +89,22 @@
             android:textSize="18dp"
             android:layout_margin="10dp"/>
 
+        <RadioGroup
+            android:id="@+id/opsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnlakilaki"
             android:text="Laki-Laki"
             android:layout_marginLeft="19dp"
+            android:checked="true"
             android:layout_marginRight="18dp"/>
 
         <RadioButton
@@ -105,6 +115,7 @@
             android:layout_marginLeft="19dp"
             android:layout_marginRight="18dp"/>
 
+        </RadioGroup>
 
         <EditText
             android:id="@+id/txttelp"
