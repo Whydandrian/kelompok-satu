@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgapps"
+    tools:context=".MainActivity">
+
+    <!-- mendefinisikan struktur layout desain menggunakan linear layout-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- digunakan untuk mengatur style profil my dashboard-->
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtDashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Barang"
+                android:textColor="#ffffff"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_margin="12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="245dp"
+                        android:src="@drawable/anting" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
