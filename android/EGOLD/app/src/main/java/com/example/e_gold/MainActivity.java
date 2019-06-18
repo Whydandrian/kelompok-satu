@@ -30,17 +30,8 @@ public class MainActivity extends AppCompatActivity {
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if(email.getText().toString().equals("safitrieka656@gmail.com")&& password.getText().toString().equals("12345")){
-                    Intent email = new Intent(MainActivity.this, menukategori.class);
-                    startActivity(email);
-
-                    Toast.makeText(getApplicationContext(),"Login Berhasil!", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(getApplicationContext(),"Login Gagal", Toast.LENGTH_SHORT).show();
-                    email.setText("");
-                    password.setText("");
-                }
+                Intent iLogin = new Intent(getApplicationContext(), home.class);
+                startActivity(iLogin);
             }
         });
 
