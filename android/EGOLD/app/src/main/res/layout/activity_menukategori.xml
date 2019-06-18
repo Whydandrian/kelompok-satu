@@ -76,6 +76,7 @@
                     android:padding="12dp">
 
                     <ImageView
+                        android:id="@+id/anting"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/anting" />
@@ -112,6 +113,7 @@
                     android:padding="12dp">
 
                     <ImageView
+                        android:id="@+id/cincin"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/cincin" />
@@ -148,6 +150,7 @@
                     android:padding="12dp">
 
                     <ImageView
+                        android:id="@+id/gelang"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/gelang2" />
@@ -184,6 +187,7 @@
                     android:padding="12dp">
 
                     <ImageView
+                        android:id="@+id/kalung"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/kalung3" />
@@ -220,6 +224,7 @@
                     android:padding="12dp">
 
                     <ImageView
+                        android:id="@+id/liontin"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:src="@drawable/liontin" />
