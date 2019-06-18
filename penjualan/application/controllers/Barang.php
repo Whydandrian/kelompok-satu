@@ -488,7 +488,7 @@ class Barang extends MY_Controller
 
 			if($level == 'admin' OR $level == 'inventory')
 			{
-				$nestedData[]	= "<a href='".site_url('barang/edit-kategori/'.$row['id_kategori_barang'])."' id='EditKategori'><i class='fa fa-pencil'></i> Edit</a>";
+				$nestedData[]	= "<a href='".site_url('barang/edit-kategori/'.$row['id_kategori_barang'])."' id='EditKategori'><img src="<?php echo config_item('img'); ?>logo_small2.png"> Edit</a>";
 				$nestedData[]	= "<a href='".site_url('barang/hapus-kategori/'.$row['id_kategori_barang'])."' id='HapusKategori'><i class='fa fa-trash-o'></i> Hapus</a>";
 			}
 
