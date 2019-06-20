@@ -11,8 +11,8 @@
             android:layout_margin="5dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
             >
 
             <LinearLayout
@@ -24,14 +24,15 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/liontin5"
+                    android:src="@drawable/ic_home_black_24dp"
                     android:layout_width="80dp"
-                    android:layout_height="80dp" />
+                    android:layout_height="80dp"
+                    android:id="@+id/home"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LiontinAnak"
+                    android:text="HOME"
                     android:textColor="#6f6f6f"
                     android:textSize="22sp" />
 
@@ -42,8 +43,8 @@
             android:layout_margin="5dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
             >
 
             <LinearLayout
@@ -55,14 +56,15 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/liontin5"
+                    android:src="@drawable/ic_format_list_bulleted_black_24dp"
                     android:layout_width="80dp"
-                    android:layout_height="80dp" />
+                    android:layout_height="80dp"
+                    android:id="@+id/kategori"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LiontinAnak"
+                    android:text="kATEGORI"
                     android:textColor="#6f6f6f"
                     android:textSize="22sp" />
 
@@ -73,8 +75,8 @@
             android:layout_margin="5dp"
             android:layout_rowWeight="1"
             android:layout_columnWeight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
             >
 
             <LinearLayout
@@ -86,143 +88,22 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:src="@drawable/liontin5"
+                    android:src="@drawable/ic_shopping_cart_black_24dp"
                     android:layout_width="80dp"
-                    android:layout_height="80dp" />
+                    android:layout_height="80dp"
+                    android:id="@+id/keranjang"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="LiontinAnak"
+                    android:text="KERANJANG"
                     android:textColor="#6f6f6f"
                     android:textSize="22sp" />
 
             </LinearLayout>
 
         </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_margin="5dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
 
-            <LinearLayout
-                android:padding="12dp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
-                <ImageView
-                    android:src="@drawable/liontin5"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="LiontinAnak"
-                    android:textColor="#6f6f6f"
-                    android:textSize="22sp" />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_margin="5dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
-
-            <LinearLayout
-                android:padding="12dp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:src="@drawable/liontin5"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="LiontinAnak"
-                    android:textColor="#6f6f6f"
-                    android:textSize="22sp" />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_margin="5dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
-
-            <LinearLayout
-                android:padding="12dp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:src="@drawable/liontin5"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="LiontinAnak"
-                    android:textColor="#6f6f6f"
-                    android:textSize="22sp" />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:layout_margin="5dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            >
-
-            <LinearLayout
-                android:padding="12dp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:src="@drawable/liontin5"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="LiontinAnak"
-                    android:textColor="#6f6f6f"
-                    android:textSize="22sp" />
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
     </LinearLayout>
 </HorizontalScrollView>
